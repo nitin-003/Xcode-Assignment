@@ -3,13 +3,13 @@ import { useEffect } from 'react';
 
 export default function LoginPage() {
   const router = useRouter();
-  
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
       router.push('/dashboard');
     }
-  }, []);
+  }, [router]);
 
   const handleLogin = () => {
     localStorage.setItem('token', 'mock-admin-token');
