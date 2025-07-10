@@ -1,4 +1,4 @@
-import listings from "@/data/mockListings";
+import listings from "../../@/data/mockListings";
 
 export default function handler(req, res){
   const { id } = req.query;
